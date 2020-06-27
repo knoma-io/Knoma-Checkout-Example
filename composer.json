@@ -1,0 +1,11 @@
+{
+  "scripts": {
+
+  },
+  "require": {
+    "ext-exif":"*",
+    "ext-gd": "*",
+    "ext-soap": "*",
+    "php": ">=5.4.0"
+  }
+}
