@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <title>Pay with Knoma Checkout</title>
+     <title>Pay with Knoma Dynamic Checkout Example</title>
 
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -18,7 +18,12 @@
      <script>
           function pwk(event, payload) {
                if (event == "kdynamic.notfound") {
+                    //Handle state for when course IS found
+
+               }
+               else if (event == "kdynamic.notfound") {
                     document.getElementById("content").innerHTML = "<h1><span class='icon'>💩</span>Course Not Found</h1><p>We could not find a course with the ID " + document.getElementById("k-paywith-action").getAttribute("k-course-id") + "</p>";
+                    //Handle state for when course NOT found
 
                }
 
