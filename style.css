@@ -1,0 +1,64 @@
+body {
+     padding-top:120px;
+     margin:0px;
+     background:#f6f6f6;
+
+}
+
+h1 {
+     font-family: Gilroy-ExtraBold;
+     font-size:54px;
+     color:#130234;
+     position:relative;
+
+}
+
+h1 .icon {
+     display:block;
+     position:relative;
+     top:6px;
+     font-size:80px;
+     padding-right:20px;
+}
+
+h2 {
+     padding-top:20px;
+     font-family: Gilroy-ExtraBold;
+     font-size:24px;
+     color:#130234 !important;
+
+}
+
+section {
+     margin-left:auto;
+     margin-right:auto;
+     width:80%;
+     max-width:900px;
+     color:rgba(32, 6, 87, 0.7);
+     font-family: DINNextLTPro-Regular;
+     letter-spacing:0.2px;
+
+}
+
+strong {
+     font-weight:800;
+     color:#130234 !important;
+
+}
+
+.checkout {
+     float:right;
+     margin-top:60px;
+     margin-bottom:60px;
+
+}
+
+.refresh {
+     position: absolute;
+     top:14px;
+     right:14px;
+     font-family: DINNextLTPro-Regular;
+     color:#5075ff;
+     text-decoration:none;
+     font-weight:800;
+}

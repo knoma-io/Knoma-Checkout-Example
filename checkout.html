@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Pay with Knoma Checkout</title>
+
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!--Required Knoma SDK Librarys--> 
+     <script src="https://api.knoma.io/paywith/launcher-min.js"></script>
+     <link rel="stylesheet" href="https://api.knoma.io/paywith/paywith.css" type="text/css" charset="utf-8"/>
+
+     <!--Example Style Sheet-->
+     <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8"/>
+
+</head>
+<body>
+     <a class="refresh" href="checkout.html?k-course=TESTCOURSEID">Refresh Test Example</a>
+     <section>
+          <h1><span class="icon">🎉</span>Congratulations!</h1>
+          <p>Your application to study <strong id="k-name">COURSE</strong> with <strong id="k-school">SCHOOL</strong> has been approved!</p>
+          <h2>What's next?</h2>
+          <p>To confirm your place please pay the outstanding sum of  <strong id="k-price">PRICE</strong> now,</p>
+          or, alternatively checkout with <div id="k-icon-action" k-custom="blue" k-trigger="modal">Knoma for interest free, fee free 12 month loan</div> 
+    
+          <div class="checkout">
+               <div id="k-paywith-action" k-custom="blue" k-provider-id="0014J00000IsAGMQA3" k-course-id="COURSE"></div>
+          </div>
+     </section>
+     <!--
+          Other Supported ID's
+          - k-reference : Course Unique ID/Reference
+          - k-name : Course Name
+          - k-provider : Provider/School Name
+          - k-price : Total Price of Course (with Currency Symbol)
+          - k-description : Full description of course
+          - k-school : Name of School/Provider
+          - k-logo : Logo of School/Provider
+          - k-prerequisites : Prerequisites of Course
+          - k-description : Description of Course
+          - k-category : Knoma Category Type of Course
+          - k-commitment : Full-time/Part-time Commitment Type
+     -->
+</body>
+</html>
