@@ -17,6 +17,11 @@
      <!--PWK Callback Functions-->
      <script>
           function pwk(event, payload) {
+               if (event == "kdynamic.notfound") {
+                    document.getElementById("content").innerHTML = "<h1>Course Not Found</h1><p>We could not find a course with the ID " + document.getElementById("k-paywith-action").getAttribute("k-course-id") + "</p>";
+                    
+               }
+
                console.log("PWK CALLBACK: " + event);
                console.log(payload);
 
@@ -26,7 +31,7 @@
 </head>
 <body>
      <a class="refresh" href="checkout.html?k-course=TESTCOURSEID">Refresh Test Example</a>
-     <section>
+     <section id="content">
           <h1><span class="icon">🎉</span>Congratulations!</h1>
           <p>Your application to study <strong id="k-name">COURSE</strong> with <strong id="k-school">SCHOOL</strong> has been approved!</p>
           <h2>What's next?</h2>
