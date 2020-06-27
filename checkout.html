@@ -18,8 +18,8 @@
      <script>
           function pwk(event, payload) {
                if (event == "kdynamic.notfound") {
-                    document.getElementById("content").innerHTML = "<h1>Course Not Found</h1><p>We could not find a course with the ID " + document.getElementById("k-paywith-action").getAttribute("k-course-id") + "</p>";
-                    
+                    document.getElementById("content").innerHTML = "<h1><span class='icon'>💩</span>Course Not Found</h1><p>We could not find a course with the ID " + document.getElementById("k-paywith-action").getAttribute("k-course-id") + "</p>";
+
                }
 
                console.log("PWK CALLBACK: " + event);
