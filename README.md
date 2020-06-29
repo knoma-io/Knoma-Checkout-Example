@@ -10,7 +10,7 @@ The Knoma SDK automatically parses the `k-course` parameter you send within the 
 
 ### Getting Started
 
-To get started you will first need a `provider-id`. If you do not have this please contact us. Next, please clone this repo and open this in your preffered text editor and replace the "[Provider ID]" (line 47) with your specific provider ID. Following that you are free to customise this as much or as little as you like (following the guidelines listed above). Once you are done please upload this code to a directory where you want the checkout to be hosted. **And that's it!**
+To get started you will first need a `provider-id`. If you do not have this please contact us. Next, please clone this repo and open this in your preffered text editor and replace the "[Provider ID]" (line 58) with your specific provider ID. Following that you are free to customise this as much or as little as you like (following the guidelines listed above). Once you are done please upload this code to a directory where you want the checkout to be hosted. **And that's it!**
 
 ### DOM Injected Course Information
 
