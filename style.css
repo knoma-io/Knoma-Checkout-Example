@@ -56,8 +56,15 @@ strong {
      position: absolute;
      top:14px;
      right:14px;
+
+}
+
+.refresh a {
      font-family: DINNextLTPro-Regular;
      color:#5075ff;
      text-decoration:none;
      font-weight:800;
+     margin-left:10;
+     margin-right:10;
+
 }
