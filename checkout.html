@@ -17,15 +17,15 @@
      <!--PWK Callback Functions-->
      <script>
           function pwk(event, payload) {
-               if (event == "kdynamic.found") {
-                    //Handle state for when course IS found
+               // if (event == "kdynamic.found") {
+               //      //Handle state for when course IS found
 
-               }
-               else if (event == "kdynamic.notfound") {
-                    document.getElementById("content").innerHTML = "<h1><span class='icon'>💩</span>Course Not Found</h1><p>We could not find a course with the ID " + document.getElementById("k-paywith-action").getAttribute("k-course-id") + "</p>";
-                    //Handle state for when course NOT found
+               // }
+               // else if (event == "kdynamic.notfound") {
+               //      document.getElementById("content").innerHTML = "<h1><span class='icon'>💩</span>Course Not Found</h1><p>We could not find a course with the ID " + document.getElementById("k-paywith-action").getAttribute("k-course-id") + "</p>";
+               //      //Handle state for when course NOT found
 
-               }
+               // }
 
                document.getElementById("loading").hidden = true;
                document.getElementById("summary").hidden = false;
@@ -46,11 +46,11 @@
 
      <section id="content">
           <h1><span class="icon">🎉</span>Congratulations!</h1>
-          <div id="loading">Loading checkout...</div>
-          <div id="summary" hidden>
-               <p>Your application to study <strong id="k-name">COURSE</strong> with <strong id="k-school">SCHOOL</strong> has been approved!</p>
+          <!--<div id="loading">Loading checkout...</div>-->
+          <div id="summary">
+               <p>Your application to study <strong id="k-name"></strong> with <strong id="k-school"></strong> has been approved!</p>
                <h2>What's next?</h2>
-               <p>To confirm your place please pay the outstanding sum of  <strong id="k-price">PRICE</strong> now,</p>
+               <p>To confirm your place please pay the outstanding sum of  <strong id="k-price"></strong> now,</p>
                or, alternatively checkout with <div id="k-icon-action" k-custom="blue" k-trigger="video">Knoma for interest & fee free loans up to 12-months</div> 
           </div>
           <div class="checkout">
