@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <title>Pay with Knoma Dynamic Checkout Example</title>
+     <title>Pay with Knoma | Blue Sky Graphics</title>
 
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -17,19 +17,7 @@
      <!--PWK Callback Functions-->
      <script>
           function pwk(event, payload) {
-               // if (event == "kdynamic.found") {
-               //      //Handle state for when course IS found
-
-               // }
-               // else if (event == "kdynamic.notfound") {
-               //      document.getElementById("content").innerHTML = "<h1><span class='icon'>💩</span>Course Not Found</h1><p>We could not find a course with the ID " + document.getElementById("k-paywith-action").getAttribute("k-course-id") + "</p>";
-               //      //Handle state for when course NOT found
-
-               // }
-
-               // document.getElementById("loading").hidden = true;
-               // document.getElementById("summary").hidden = false;
-               
+               //List of Callbacks available at https://www.knoma.io/developer/paywith#Callbacks
                console.log("PWK CALLBACK: " + event);
                console.log(payload);
 
@@ -38,12 +26,6 @@
 
 </head>
 <body>
-     <!-- Should Be Removed -->
-     <div class="refresh">
-          <a href="checkout.html?k-course=TESTCOURSEID">Refresh Test Example</a>
-          <a href="https://github.com/knoma-io/Knoma-Checkout-Example" target="blank" alt="Knoma Github Repo">Source Code Repo</a>
-     </div>
-
      <section id="content">
           <h1><span class="icon">🎉</span>Congratulations!</h1>
           <!--<div id="loading">Loading checkout...</div>-->
@@ -61,7 +43,7 @@
                     - k-provider-id : Replace with your Provider ID, contact joe@knoma.io if you have not receive one yet
                     - k-course-id : "Leave this empty, it will be auto populated with the k-course ID URL parameter"
                -->
-               <div id="k-paywith-action" k-custom="blue" k-provider-id="0014J00000AmER8QAN" k-course-id="B24J000000Gr55SAC"></div>
+               <div id="k-paywith-action" k-custom="blue" k-provider-id="0014J00000Ny41PQAR" k-course-id=""></div>
           </div>
      </section>
      <!--
